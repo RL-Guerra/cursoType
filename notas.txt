@@ -1,0 +1,23 @@
+tsc -h (help)
+
+para exec o node usa o comando: 
+node 'caminho do arquivo'
+    ex: node src/aula02.ts
+
+para compilar de ts para js usa o comando: tsc 'nome arquivo'
+    ex: tsc src/aula02.ts
+
+Compila para a versao mais atual do ecmascript
+tsc 'nome arqivo' --target "ESNEXT"
+
+para gerar o arqivo de config usa o comando:
+tsc --init
+    muda o target para ESNext33
+    "outDir": (especifica onde ficara os arquivos de saida (NO CASO OS .js)) 
+        ex: "src/build"
+
+    "rootDirs": (especifica onde ficara os arquivos .ts criados)
+        ex: ["/src"],
+
+monitora todo o conjunto do ts, onde compila e gera o js se nao houver erro
+tsc -w
